@@ -1,0 +1,3 @@
+#!/bin/bash
+ ls -l | awk '$6 == "Oct" { sum += $5 }
+             END { print (sum / 1024) "k" }'

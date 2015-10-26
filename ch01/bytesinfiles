@@ -1,0 +1,3 @@
+#!/bin/bash
+ls -l "$0" | awk '{ x += $5 }
+                    END { print "total bytes: " x }'

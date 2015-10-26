@@ -1,0 +1,2 @@
+#! /usr/bin/awk -f
+x = length($0) { print x }
