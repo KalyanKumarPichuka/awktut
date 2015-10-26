@@ -1,0 +1,25 @@
+#!/bin/bash
+
+taskname="$1"
+opt1="$2"
+
+function commit
+{
+    git add -A
+    git commit -m "opt1"
+}
+
+function syncup
+{
+    commit
+    git push origin master
+}
+
+case "${taskname}" in
+"commit")
+    commit
+    ;;
+"syncup")
+    syncup
+    ;;
+esac
