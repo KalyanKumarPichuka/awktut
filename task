@@ -5,6 +5,7 @@ opt1="$2"
 
 function commit
 {
+    git add *
     git add -A
     git commit -m "opt1"
 }
