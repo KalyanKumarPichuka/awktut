@@ -1,0 +1,3 @@
+#!/usr/bin/awk -f
+# prints the number of fields for each record
+awk '{ print NF }'
