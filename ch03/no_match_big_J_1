@@ -1,0 +1,3 @@
+#!/usr/bin/awk -f
+# prints if field 1 matches /J/
+$1 !~ /J/
