@@ -16,11 +16,19 @@ function syncup
     git push origin master
 }
 
+function syncdown
+{
+    git pull origin master
+}
+
 case "${taskname}" in
 "commit")
     commit
     ;;
 "syncup")
     syncup
+    ;;
+"syncdown")
+    syncdown
     ;;
 esac
