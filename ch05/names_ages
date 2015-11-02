@@ -1,9 +1,10 @@
 #!/opt/local/bin/gawk -f
 # demonstrates column-width formatting
 BEGIN {
+    format = "%-10s %-10d\n"
     printf "%-10s %-10s\n", "name", "age"
-    printf "%-10s %-10d\n", "Aaron", 30
-    printf "%-10s %-10d\n", "Jenni", 26
-    printf "%-10s %-10d\n", "Doug", 62
-    printf "%-10s %-10d\n", "Valerie", 62
+    printf format, "Aaron", 30
+    printf format, "Jenni", 26
+    printf format, "Doug", 62
+    printf format, "Valerie", 62
 }
