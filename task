@@ -1,18 +1,28 @@
 #!/bin/bash
 
 taskname="$1"
-opt1="$2"
+
+while getopts m opt; do
+  case $opt in
+#    m)
+#      commit_msg="$OPTARG"
+#      ;;
+    *) # do nothing
+      echo $OPTARG
+      ;;
+  esac
+done
 
 function commit
 {
     git add *
     git add -A
-    git commit -m "$opt1"
+    git commit -m "$1"
 }
 
 function syncup
 {
-    commit
+    commit "$commit_msg"
     git push origin master
 }
 
@@ -23,7 +33,7 @@ function syncdown
 
 case "${taskname}" in
 "commit")
-    commit
+    commit "$commit_msg"
     ;;
 "syncup")
     syncup
