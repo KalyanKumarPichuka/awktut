@@ -1,0 +1,10 @@
+this line is printed
+this line is also printed
+%
+not printed
+not printed
+never printed
+also not printed
+%
+..now resuming..
+my job's pretty good when i can do stuff like this :)

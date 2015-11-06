@@ -1,2 +1,0 @@
-#! /usr/bin/awk -f
-/li/ { print $0 } # print lines containing 'li'

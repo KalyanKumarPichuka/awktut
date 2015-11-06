@@ -1,3 +1,0 @@
-#!/usr/bin/awk -f
-# prints the second to last field in each record
-{ print $(NF - 1) }
