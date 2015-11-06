@@ -7,7 +7,7 @@ function commit
 {
     git add *
     git add -A
-    git commit -m "opt1"
+    git commit -m "$opt1"
 }
 
 function syncup
